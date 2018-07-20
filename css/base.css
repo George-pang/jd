@@ -196,32 +196,33 @@ body{
 	position: absolute;
     top: 10px;
     right: 65px;
-    width: 19px;
+    width: 20px;
     height: 15px;
     /*z-index: 3;*/
    	overflow: hidden;
 }
 .photo-search .camera-bg{
 	display: block;
-	width: 19px;
+	width: 20px;
 	height: 15px;
+	vertical-align: middle;
 	background: url(../img/sprite-search.png)no-repeat 0 0;
 	cursor: pointer;
 }
-.camera-bg:hover{
+/*.camera-bg:hover{
 	background: url(../img/sprite-search.png)no-repeat -30px 0;
-}
+}*/
 .photo-search .file-search{
 	position: absolute; /*压在camera背景图上面*/
 	top: 0;
 	right: 0;
-	width: 19px;
+	/*width: 20px;*/ /*给定宽度值小于某个值(未知),出现小bug*/
 	height: 15px;
-	z-index: -1;
+	z-index: 1;
 	cursor: pointer;
 	opacity: 0;/*完全透明,隐藏默认文件上传样式*/
 }
-.file-search:hover .camera-bg{
+.photo-search:hover .camera-bg{
 	background: url(../img/sprite-search.png)no-repeat -30px 0;
 }
 	/*我的购物车*/
